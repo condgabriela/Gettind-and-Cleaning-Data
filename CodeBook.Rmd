@@ -1,0 +1,117 @@
+---
+title: "Code book"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GitHub Documents
+==================================================================
+
+The original date came from an experiment carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
+
+
+Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were obtained.  
+
+For each record on the train and test set the following data is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+======================================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. The acceleration signal was then separated into body and gravity acceleration signals (TimeBodyAcc-XYZ and TimeGravityAcc-XYZ).
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TimeBodyAccJerk-XYZ and TimeBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAccMag, TimeGravityAccMag, TimBodyAccJerkMag, TimeBodyGyroMag, TimeBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform  was applied to some of these signals producing FastFourierBodyAcc-XYZ, FastFourierBodyAccJerk-XYZ, FastFourierBodyGyro-XYZ, FastFourierBodyAccJerkMag, FastFourierBodyGyroMag, FastFourierBodyGyroJerkMag.  
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+======================================
+
+As requested for the course project the mean and standard deviation for each measurement were sellected and grouped by subject and activity. The mean was used as summary statistic for grouping.
+
+======================================
+
+Variables Names in the tidy set
+
+Activity
+Subject
+TimeBodyAccAVGX
+TimeBodyAccAVGY
+TimeBodyAccAVGZ
+TimeBodyAccSTDX
+TimeBodyAccSTDY
+TimeBodyAccSTDZ
+TimeGravityAccAVGX
+TimeGravityAccAVGY
+TimeGravityAccAVGZ
+TimeGravityAccSTDX
+TimeGravityAccSTDY
+TimeGravityAccSTDZ
+TimeBodyAccJerkAVGX
+TimeBodyAccJerkAVGY
+TimeBodyAccJerkAVGZ
+TimeBodyAccJerkSTDX
+TimeBodyAccJerkSTDY
+TimeBodyAccJerkSTDZ
+TimeBodyGyroAVGX
+TimeBodyGyroAVGY
+TimeBodyGyroAVGZ
+TimeBodyGyroSTDX
+TimeBodyGyroSTDY
+TimeBodyGyroSTDZ
+TimeBodyGyroJerkAVGX
+TimeBodyGyroJerkAVGY
+TimeBodyGyroJerkAVGZ
+TimeBodyGyroJerkSTDX
+TimeBodyGyroJerkSTDY
+TimeBodyGyroJerkSTDZ
+TimeBodyAccMagmean
+TimeBodyAccMagSTD
+TimeGravityAccMagmean
+TimeGravityAccMagSTD
+TimeBodyAccJerkMagmean
+TimeBodyAccJerkMagSTD
+TimeBodyGyroMagmean
+TimeBodyGyroMagSTD
+TimeBodyAccJerkMagmean
+TimeBodyAccJerkMagSTD
+TimeBodyGyroJerkMagmean
+TimeBodyGyroJerkMagSTD
+FastFourierBodyAccAVGX
+FastFourierBodyAccAVGY
+FastFourierBodyAccAVGZ
+FastFourierBodyAccSTDX
+FastFourierBodyAccSTDY
+FastFourierBodyAccSTDZ
+FastFourierBodyAccJerkAVGX
+FastFourierBodyAccJerkAVGY
+FastFourierBodyAccJerkAVGZ
+FastFourierBodyAccJerkSTDX
+FastFourierBodyAccJerkSTDY
+FastFourierBodyAccJerkSTDZ
+FastFourierBodyGyroAVGX
+FastFourierBodyGyroAVGY
+FastFourierBodyGyroAVGZ
+FastFourierBodyGyroSTDX
+FastFourierBodyGyroSTDY
+FastFourierBodyGyroSTDZ
+FastFourierBodyAccMagmean
+FastFourierBodyAccMagSTD
+FastFourierBodyAccJerkMagmean
+FastFourierBodyAccJerkMagSTD
+FastFourierBodyGyroMagmean
+FastFourierBodyGyroMagSTD
+FastFourierBodyGyroJerkMagmean
+FastFourierBodyGyroJerkMagSTD
+
+
